@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="700bea6f-1972-4efe-a48d-e9e6a70d0236" name="Default Changelist" comment="new MyCoords class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Coords/MyCoords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Coords/coords_converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/File_format/Json_101.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GIS/GIS_UML.ucls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GIS/GIS_element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GIS/GIS_layer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GIS/GIS_project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GIS/Meta_data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GUI/Example01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GUI/JFrmaeGraphics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/GUI/SimpleJButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Geom/Geom_element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Geom/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Geom/Point_UML.ucls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Threads/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Threads/Sorting_Threads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Threads/Sorting_Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/src/Threads/TestThreads.java" afterDir="false" />
-    </list>
+    <list default="true" id="700bea6f-1972-4efe-a48d-e9e6a70d0236" name="Default Changelist" comment="new MyCoords class" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -80,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/src/Coords/MyCoords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -529,7 +510,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542566809358" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542567330813" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -565,6 +546,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -663,8 +645,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/src/Coords/MyCoords.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
