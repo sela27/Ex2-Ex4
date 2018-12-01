@@ -23,8 +23,11 @@ public class Point3D implements Geom_element, Serializable
 		_z=p.z();
 	}
 	public Point3D(double x,double y) 
-	{this(x,y,0);}
-	public Point3D(String s) {
+	{
+		this(x,y,0);
+	}
+	public Point3D(String s)
+	{
 		String[] a = s.split(",");
 		_x = Double.parseDouble(a[0]);
 		_y = Double.parseDouble(a[1]);
@@ -87,7 +90,8 @@ public final static int ONSEGMENT = 0,  LEFT = 1, RIGHT = 2, INFRONTOFA = 3, BEH
 public final static int DOWN = 6, UP = 7;
 
 /** return up iff this point is above the SEGMENT (not the line) */
-    public int pointLineTest2(Point3D a, Point3D b) {
+    public int pointLineTest2(Point3D a, Point3D b)
+	{
     	int flag = this.pointLineTest(a,b);
     	if(a._x < b._x ) {
     		if(a._x<=_x && b._x>_x) {
@@ -123,7 +127,8 @@ public final static int DOWN = 6, UP = 7;
 	ERROR: a==b || a==null || b == null;                               <br>
     */
 
-    public int pointLineTest(Point3D a, Point3D b) {
+    public int pointLineTest(Point3D a, Point3D b)
+	{
 
 	if(a== null || b==null || a.equalsXY(b)) return ERROR;
 
