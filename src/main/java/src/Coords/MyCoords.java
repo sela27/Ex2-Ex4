@@ -6,9 +6,9 @@ public class MyCoords implements coords_converter
 {
     /**
      * computes a new point which is the gps point transformed by a 3D vector (in meters)
-     * @param gps
-     * @param local_vector_in_meter
-     * @return
+     * @param gps a gps point
+     * @param local_vector_in_meter vector in meter
+     * @return the new point after we add gps with local_vector_in_meter
      */
     @Override
     public Point3D add(Point3D gps, Point3D local_vector_in_meter)
@@ -26,9 +26,9 @@ public class MyCoords implements coords_converter
 
     /**
      * computes the 3D distance (in meters) between the two gps like points
-     * @param gps0
-     * @param gps1
-     * @return
+     * @param gps0 first point
+     * @param gps1 second point
+     * @return the distance between the 2 point
      */
     @Override
     public double distance3d(Point3D gps0, Point3D gps1)
@@ -47,9 +47,9 @@ public class MyCoords implements coords_converter
 
     /**
      * computes the 3D vector (in meters) between two gps like points
-     * @param gps0
-     * @param gps1
-     * @return
+     * @param gps0 first point
+     * @param gps1 second point
+     * @return the 3D vector between the two points
      */
     @Override
     public Point3D vector3D(Point3D gps0, Point3D gps1)
@@ -69,9 +69,9 @@ public class MyCoords implements coords_converter
     /**
      * computes the polar representation of the 3D vector be gps0-->gps1
      *  Note: this method should return an azimuth (aka yaw), elevation (pitch), and distance
-     * @param gps0
-     * @param gps1
-     * @return
+     * @param gps0 first point
+     * @param gps1 second point
+     * @return an azimuth (aka yaw), elevation (pitch), and distance
      */
     @Override
     public double[] azimuth_elevation_dist(Point3D gps0, Point3D gps1)
@@ -91,8 +91,8 @@ public class MyCoords implements coords_converter
 
     /**
      * return true iff this point is a valid lat, lon , alt coordinate: [-180,+180],[-90,+90],[-450, +inf]
-     * @param p
-     * @return
+     * @param p a point to check if its a valid gps point
+     * @return true if its a gps point false otherwise
      */
     @Override
     public boolean isValid_GPS_Point(Point3D p)
@@ -103,10 +103,22 @@ public class MyCoords implements coords_converter
         return (lat && lon && alt);
     }
 
+    /**
+     * calculate the size of the vector
+     * @param vector_in_meter the vector to check
+     * @return the size of vector_in_meter
+     */
     private double Vector_Length(Point3D vector_in_meter)
     {
         return Math.sqrt(Math.pow(vector_in_meter.x(),2) + Math.pow(vector_in_meter.y(),2) + Math.pow(vector_in_meter.z(),2));
     }
+
+    /**
+     * Calculate the dot product between V1 and V2
+     * @param V1 first point
+     * @param V2 second point
+     * @return the dot product
+     */
     private double dot_product(Point3D V1, Point3D V2)
     {
         return ((V1.x()*V2.x()) + (V1.y()*V2.y()) +(V1.z()*V2.y()));

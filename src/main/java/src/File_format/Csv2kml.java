@@ -6,9 +6,7 @@ import src.GIS.MyGisLayer;
 import src.GIS.MyMetaData;
 import src.Geom.Point3D;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
@@ -72,7 +70,7 @@ public class Csv2kml
         return Layer;
     }
 
-    public static void CreateKmlFileFromCvs(String path)
+    public static String CreateKmlFileFromCvs(String path)
     {
         LinkedList<String[]> L = CSVReader(path);
         MyGisLayer Layer = CreateGisLayer(L);
@@ -99,10 +97,24 @@ public class Csv2kml
             kml+= "<coordinates>";
             kml += gisEle.getPoint().x() + "," + gisEle.getPoint().y() + "," + gisEle.getPoint().z();
             kml += "</coordinates></Point>" + "\n" +  "</Placemark>";
-
         }
 
+        File f = new File(path);
+        String file_name = f.getName();
+        file_name = file_name.substring(0,file_name.length() - 3);
+        file_name += "kml";
+        try
+        {
+            PrintWriter out = new PrintWriter(file_name);
+            out.println(kml);
+            out.close();
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
 
+        return kml;
     }
 
     /*public static void main(String[] args)
