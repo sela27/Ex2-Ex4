@@ -2,7 +2,8 @@ package src.GIS;
 
 import src.Geom.Point3D;
 
-public interface Meta_data {
+public interface Meta_data
+{
 	/** returns the Universal Time Clock associated with this data; */
 	public long getUTC();
 	/** return a String representing this data */
